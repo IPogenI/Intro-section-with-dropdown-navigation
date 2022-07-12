@@ -13,72 +13,140 @@
 </head>
 <body>
 <nav>
-  <ul class="navbar">
-    <li id="logo">
-      <img src="./images/logo.svg" alt="a logo that says the word snap">
-    </li>
-    <li id="dropdown_1" class="dropdown">
-      <a href="#" >
-        <p>Features</p>
-        <div id="drop_1" class="features_tab hide">
+    <ul class="navbar">
+      <li id="logo">
+        <img src="./images/logo.svg" alt="a logo that says the word snap">
+      </li>
+      <li id="dropdown_1" class="dropdown sidetab">
+        <a href="#" >
+          <div class="header"><p>Features</p><img id="arw_d_1" src="./images/icon-arrow-down.svg" alt="arrow down"></div>
+          <div id="drop_1" class="features_tab">
+            <ul class="tabs">
+              <li class="tab">
+                <img src="./images/icon-todo.svg" alt="calender icon">
+                <p>Todo List</p> 
+              </li>
+              <li class="tab">
+                <img src="./images/icon-calendar.svg" alt="calender icon">
+                <p>Calender</p> 
+              </li>
+              <li class="tab">
+                <img src="./images/icon-reminders.svg" alt="calender icon">
+                <p>Reminders</p> 
+              </li>
+              <li class="tab">
+                <img src="./images/icon-planning.svg" alt="calender icon">
+                <p>Planning</p> 
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li id="dropdown_2" class="dropdown sidetab">
+        <a href="#">
+        <div class="header"><p>Company</p><img id="arw_d_2" src="./images/icon-arrow-down.svg" alt="arrow down"> </div>
+        <div id="drop_2"  class="company_tab">
           <ul class="tabs">
             <li class="tab">
-              <img src="./images/icon-todo.svg" alt="calender icon">
-              <p>Todo List</p> 
+              <p>History</p> 
             </li>
             <li class="tab">
-              <img src="./images/icon-calendar.svg" alt="calender icon">
-              <p>Calender</p> 
+              <p>Our Team</p> 
             </li>
             <li class="tab">
-              <img src="./images/icon-reminders.svg" alt="calender icon">
-              <p>Reminders</p> 
-            </li>
-            <li class="tab">
-              <img src="./images/icon-planning.svg" alt="calender icon">
-              <p>Planning</p> 
+              <p>Blog</p> 
             </li>
           </ul>
         </div>
-      </a>
-      <img src="./images/icon-arrow-down.svg" alt="arrow down">
-    </li>
-    <li id="dropdown_2" class="dropdown">
-      <a href="#">
-       <p>Company</p> 
-       <div id="drop_2"  class="company_tab hide">
-        <ul class="tabs">
-          <li class="tab">
-            <p>History</p> 
-          </li>
-          <li class="tab">
-            <p>Our Team</p> 
-          </li>
-          <li class="tab">
-            <p>Blog</p> 
-          </li>
-        </ul>
-      </div>
-      </a>
-      <img src="./images/icon-arrow-down.svg" alt="arrow down">
-    </li>
-    <li><a href="#">Careers</a></li>
-    <li><a href="#">About</a></li>
-  </ul>
-  <ul class="navbar">
-    <li><a href="#">Login</a></li>
-    <li class="btn nav-btn"><a href="#">Register</a></li>
-  </ul>
+        </a>
+      </li>
+      <li class="sidetab"><a href="#">Careers</a></li>
+      <li class="sidetab"><a href="#">About</a></li>
+    </ul>
+    <ul class="navbar">
+      <li class="sidetab"><a href="#">Login</a></li>
+      <li class="btn nav-btn sidetab"><a href="#">Register</a></li>
+    </ul>
+  <div class="sidebar-menu" >
+    <div id="sideNav" class="sideNav">
+      <img src="./images/icon-close-menu.svg" href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <div class="sideNavItems">
+          <ul class="navbar">
+            <li id="dropdown_1" class="dropdown sidetab">
+              <a href="#" >
+                <div class="header"><p>Features</p><img id="arw_d_1" src="./images/icon-arrow-down.svg" alt="arrow down"></div>
+                <div id="drop_1" class="features_tab">
+                  <ul class="tabs">
+                    <li class="tab">
+                      <img src="./images/icon-todo.svg" alt="calender icon">
+                      <p>Todo List</p> 
+                    </li>
+                    <li class="tab">
+                      <img src="./images/icon-calendar.svg" alt="calender icon">
+                      <p>Calender</p> 
+                    </li>
+                    <li class="tab">
+                      <img src="./images/icon-reminders.svg" alt="calender icon">
+                      <p>Reminders</p> 
+                    </li>
+                    <li class="tab">
+                      <img src="./images/icon-planning.svg" alt="calender icon">
+                      <p>Planning</p> 
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li id="dropdown_2" class="dropdown sidetab">
+              <a href="#">
+              <div class="header"><p>Company</p><img id="arw_d_2" src="./images/icon-arrow-down.svg" alt="arrow down"> </div>
+              <div id="drop_2"  class="company_tab">
+                <ul class="tabs">
+                  <li class="tab">
+                    <p>History</p> 
+                  </li>
+                  <li class="tab">
+                    <p>Our Team</p> 
+                  </li>
+                  <li class="tab">
+                    <p>Blog</p> 
+                  </li>
+                </ul>
+              </div>
+              </a>
+            </li>
+            <li class="sidetab"><a href="#">Careers</a></li>
+            <li class="sidetab"><a href="#">About</a></li>
+          </ul>
+    </div>
+      <ul class="sidenavbar">
+        <li><a href="#">Login</a></li>
+        <li class="btn nav-btn"><a href="#">Register</a></li>
+      </ul>
+  </div>
+  <img src="./images/icon-menu.svg" alt="menu icon" onclick="openNav()" id="openbtn">
+  </div>
 </nav>
   
-<main class="home-page hide">
-  <div class="text">
-    <h1>Make remote work</h1>
-    <p>Get your team in sync, no matter your location. Streamline processes, 
-      create team rituals, and watch productivity soar.
-    </p>
-    <button class="btn">Learn more</button>
+<main class="main-section">
+  <div class="section">
+    <div class="text">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="btn btn-primary">Learn more</button>
+      <div class="sponsors">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="img">
+    </div>
   </div>
+  
 </main>
   
   
