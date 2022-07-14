@@ -178,7 +178,7 @@ nav ul li:hover{
 
 .main-section .img{
     margin-top: -2.5rem;
-    background-image: url(../images/image-hero-desktop.png);
+    background-image: url(./images/image-hero-desktop.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
